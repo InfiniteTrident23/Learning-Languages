@@ -1,0 +1,96 @@
+<!-- if we press Ctrl+/, it auomatically turns the line into a comment -->
+<!-- ctrl+Enter to jump to next new line -->
+
+<!DOCTYPE html>
+<!--This tells the browser the type of document this is or the file type-->
+<html lang="en">
+
+<head>
+    <!--If we have to link external CSS or JS script, we do it in this <Head> only.-->
+
+    <meta charset="UTF-8">
+    <!--This is Metadata, data which is used to describe other data-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--The "content" tag helps in adjusting the site according to the device, as in pc or mobile or etc.-->
+
+    <!--Few examples of "Meta" tags as follows:-->
+    <meta name="decription" content="This is description">
+    <meta name="keywords" content="html, html tutorial, web development">
+
+    <title>Web Trial</title>
+    <!--The name of the site-->
+
+    <link rel="stylesheet" href="WebLearning.css">
+    <!--this is how u link external css file, just type "link"-->
+
+    <script src="WebLearning.js"></script>
+    <!--This is how u link external JavaScript file, type "script:src"-->
+
+</head>
+
+<body>
+    <h1>This is the biggest heading</h1>
+    <h2>This is second biggest heading </h2>
+    <h3>And so on...</h3><!-- It is uptil h6-->
+
+    <p>This is paragraph <br>
+        <!--can be used to as "\n" from python--><strong>("strong" header can be used to bold
+            sentences)</strong><br><em>("em" can be used to make a part Italic)</em>
+    </p>
+    <hr>
+    <!--adds a line, like a physical line, not leave a line-->
+
+    <a href="https://www.youtube.com/watch?v=z6H22xGAZEA&list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&index=6"
+        target="_blank">Where to learn from</a>
+    <!--"target attribute opens link in a new tab"-->
+    <br><a href="/WebLearning.css" target="_blank">This can be used to link files as well</a><br>
+
+    <!-- Now, how to add an image -->
+    <img src="https://images.unsplash.com/photo-1594136662380-3580470c089d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c291cmNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        alt="Waterfall">
+    <!--"alt" contains what we want to display if the image cannot be displayed-->
+
+    <!-- lists -->
+    <ol type="a">
+        <!--This is for ordered lists, the pointers are 1., 2., etc. we can specify using the type attribute-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <ul type="circle">
+        <!--This is for Unordered lists, the pointers are dots, circles or square-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <!-- Tables -->
+    <table>
+        <thead><tr>
+            <th>Name</th>
+            <th>Nickname</th>
+            <th>Height</th>
+        </tr></thead>
+        <tbody><tr>
+            <td>ABCD</td>
+            <td>XYZ</td>
+            <td>Smol</td>
+        </tr></tbody>
+    </table>
+
+    <!-- IDs and class -->
+    <h3>IDs and Classes</h3>
+    <div id="mainBox" class="redBg"><!--ID cannot be repeated-->
+        <!-- ID is used to locate/find a particular thing to work on in CSS -->
+        <!-- Class is used as a variable which stores descriptive info as to how smth is supposed to look, ex: redBg class can contain red background and border, now this can be used with several other IDs if is needed to be repeated -->
+    </div>
+
+    <!-- Entities -->
+    <!-- If u print '        ', HTML will print ' ', so u have to use "&nbsp;" to print extra space -->
+    <div class="redBg"><p>This is a trial for empty message: &#8203;</p></div>
+</body>
+
+</html>
